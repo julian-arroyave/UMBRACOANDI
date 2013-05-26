@@ -1,9 +1,11 @@
 body, html { margin:0; height:100%;} 
 #wrapper     
 {
-    margin: 0 auto;
-    width: 85%;
-    overflow:auto;
+    margin: -40px auto 0;
+    overflow: auto;
+    position: relative;
+    width: 75%;
+    z-index: 5;
 }
 #slider
 {
@@ -22,18 +24,60 @@ body, html { margin:0; height:100%;}
     width:100%;
     clear:both;
     }
-
-    #rights-contact { width:85%;margin: 0 auto;}
+    
+    .post { margin:14px 25px; font-family:Calibri; height:100px;}
+    .subtitle { font-weight:bolder; font-size:20px;   margin-bottom: 3px;
+    margin-top: -8px}
+    .subsubtitle {font-size:12px;color:#515151;}
+    .textcontent { line-height:19px; color:#515151;}
+    .general .img-box{ width:204px; height: 150px;}
+    .general .post { height:150px;}
+    .general .post .text-box { height:150px;}
+    .img-box { width:150px; height:100px;  float: left;     margin-right: 22px;} 
+h3.titlebox { font-family:Myriad Pro; color:#1abce5;  font-weight:bolder;  font-size:40px; margin:10px; margin-left:25px;}
+    #rights-contact { width:75%;margin: 0 auto;}
     #top-container { width:100%;background-color:#034793; height:100px;}
-    #social-search{ display:block; height:50%; width:85%;margin: 0 auto;}
-    #menu { display:block; height:50%; width:85%;margin: 0 auto;}
-    .menu li {float:left; margin-right:10px; color:#fff; text-transform: uppercase; }
+    #social-search{ display:block; height:50%; width:75%;margin: 0 auto;padding-top: 12px;position: relative;}
+    #menu { display:block; height:50%; width:75%;margin: 0 auto;}
+    .menu li {float:left; margin-left:25px; color:#fff; text-transform: uppercase; }
+    .news .subtitle { font-size:15px;}
+    .news .textcontent { font-size:14px;}
+    .news .post{ margin: 0 10px;}
+    .news .date { float:left; height:60px; width:60px; font-size:30px; text-align:center; color:#0d4f9d} 
+    .news .date span { font-size:19.5px; }
+    
+    
+    
+    .menu li:hover{color:#1abce5;}
     ul { list-style:none; font-family:Myriad Pro; font-weight:bold; cursor:pointer; margin:0;}
     .menu { float: right;}
     #rights, #contact { width:50%; height:100%} 
     #rights { float:left;}
     #contact { float: right;}
     body { background-color: #e8e8e8; margin:0px;} 
-    .little-box, .big-box { height:252px;margin:1%; background-color:#fff; float:left;}
-    .little-box {width:28%;}
-    .big-box { width:68%;}
+    .news, .general { height:255px;margin:1%; background-color:#fff; float:left;}
+    .joinus , .news {width:35%;}
+    .general ,.blog { width:61%;}
+    .blog, .joinus { height:335px; margin:1%; float:left; background-color:#fff;} 
+    #social {    display: inline-block;
+    float: right;
+    position: absolute;
+    right: 164px;
+    top: 16px;}
+    #search { float:right;position: relative;} 
+    #searcher { background-color:#023976; border:0; height: 25px; width:160px;font-family:Myriad Pro; color:#999; padding-left:5px;}
+    #social ul li { float:left;margin-right:16px;}
+    
+    #btn-searcher {
+  background-color: transparent;
+    background-image: url("../images/search.png");
+    border: 0 none;
+    cursor: pointer;
+    height: 14px;
+    position: absolute;
+    right: 6px;
+    top: 7px;
+    width: 14px;
+} 
+
+.text-box span { display:block;}

@@ -1,0 +1,111 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/umbraco/masterpages/default.master" AutoEventWireup="true" %>
+
+<asp:Content ContentPlaceHolderID="ContentPlaceHolderDefault" runat="server">
+<%@ Master Language="C#" MasterPageFile="~/umbraco/masterpages/default.master" AutoEventWireup="true" %>
+
+<asp:ContentPlaceHolder Id="ContentPlaceHolderDefault" runat="server">
+<html>
+<head>
+<title>Andi del futuro</title>
+<link rel="stylesheet" href= "css/andi.css" type="text/css" />
+<script type="text/javascript" src="scripts/jquery-1.10.0.min.js"></script>
+<script type="text/javascript" src="scripts/andi.js"></script>
+</head>
+<body>
+<div id="top-container">
+<div id="social-search">
+<div id="social">
+<ul class="social">
+<li><img class="" src="images/twitter.png" alt=""/></li>
+<li><img class="" src="images/facebook.png" alt=""/></li>
+<li><img class="" src="images/mail.png" alt=""/></li>
+<li><img class="" src="images/mail.png" alt=""/></li>
+</ul>
+</div>
+<div id="search">
+ <form method="post" id="frm-searcher" action="@searcher.Url">
+    <input type="text" name="wts" value="@Dictionary.Buscar" id="searcher"/>
+    <input type="submit" id="btn-searcher" value=""/> 
+ </form>
+</div>
+</div>
+<div id="menu">
+<ul class="menu">
+<li>Inicio</li>
+<li>Nosotros</li>
+<li>Cómo funciona</li>
+<li>Empresas</li>
+<li>Blog</li>
+</ul>
+</div>
+</div>
+<div id="slider">
+<img class="" src="images/slider1.png" alt=""/>
+</div>
+<div id="wrapper">
+<div id="content">
+<div class="joinus" style=" background-color:#50bfe9"></div>
+<div class="blog">
+<h3 class="titlebox">BLOG</h3>
+<div class="post">
+<img class="img-box" src="images/blog.png" alt=""/>
+<div class="text-box">
+<span class="subsubtitle">Febrero 22 de 2013</span>
+<span class="subtitle">Emprendedores Urbanos</span>
+<span class="textcontent">Texto de prueba blablabla y más blabla bla,Texto de prueba blablabla y más blabla blaTexto de prueba blablabla y más blabla bla </span>
+</div>
+</div>
+<div class="post">
+<img class="img-box" src="images/blog.png" alt=""/>
+<div class="text-box">
+<span class="subsubtitle">Febrero 22 de 2013</span>
+<span class="subtitle">Emprendedores Urbanos</span>
+<span class="textcontent">Texto de prueba blablabla y más blabla bla,Texto de prueba blablabla y más blabla blaTexto de prueba blablabla y más blabla bla </span>
+</div>
+</div>
+</div>
+<div class="general">
+<h3 class="titlebox">BLOG</h3>
+<div class="post">
+<img class="img-box" src="images/blog.png" alt=""/>
+<div class="text-box">
+<span class="subsubtitle"></span>
+<span class="subtitle">Emprendedores Urbanos</span>
+<span class="textcontent">Texto de prueba blablabla y más blabla bla,Texto de prueba blablabla y más blabla blaTexto de prueba blablabla y más blabla bla </span>
+</div>
+</div>
+</div>
+<div class="news">
+<h3 class="titlebox">BLOG</h3>
+<div class="post">
+<div class="date">25 <span>FEB</span></div>
+<div class="text-box">
+<span class="subsubtitle"></span>
+<span class="subtitle">Emprendedores Urbanos</span>
+<span class="textcontent">Texto de prueba blablabla y más blabla bla,Texto de prueba blablabla  </span>
+</div>
+</div>
+<div class="post">
+<div class="date">25 <span>FEB</span></div>
+<div class="text-box">
+<span class="subsubtitle"></span>
+<span class="subtitle">Emprendedores Urbanos</span>
+<span class="textcontent">Texto de prueba blablabla y más blabla bla,Texto de prueba blablabla y </span>
+</div>
+</div>
+
+
+</div>
+</div>
+
+</div>
+<div id="footer">
+<div id="rights-contact">
+<div id="rights"></div>
+<div id="contact"></div>
+</div>
+</div>
+</body>
+</html>
+</asp:ContentPlaceHolder>
+</asp:Content>
