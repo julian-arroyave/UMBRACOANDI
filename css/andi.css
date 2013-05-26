@@ -39,7 +39,7 @@ h3.titlebox { font-family:Myriad Pro; color:#1abce5;  font-weight:bolder;  font-
     #top-container { width:100%;background-color:#034793; height:100px;}
     #social-search{ display:block; height:50%; width:75%;margin: 0 auto;padding-top: 12px;position: relative;}
     #menu { display:block; height:50%; width:75%;margin: 0 auto;}
-    .menu li {float:left; margin-left:25px; color:#fff; text-transform: uppercase; }
+    .menu li, .menu li  a  {float:left; margin-left:12px; color:#fff; text-transform: uppercase; text-decoration:none; }
     .news .subtitle { font-size:15px;}
     .news .textcontent { font-size:14px;}
     .news .post{ margin: 0 10px;}
@@ -48,7 +48,7 @@ h3.titlebox { font-family:Myriad Pro; color:#1abce5;  font-weight:bolder;  font-
     
     
     
-    .menu li:hover{color:#1abce5;}
+    .menu li a:hover{color:#1abce5;}
     ul { list-style:none; font-family:Myriad Pro; font-weight:bold; cursor:pointer; margin:0;}
     .menu { float: right;}
     #rights, #contact { width:50%; height:100%} 
@@ -81,3 +81,10 @@ h3.titlebox { font-family:Myriad Pro; color:#1abce5;  font-weight:bolder;  font-
 } 
 
 .text-box span { display:block;}
+
+
+/*slider*/
+.button-down { height:54px;width:36px; background-image: url("../images/arrowleft.png"); top:260px; cursor:pointer; left:155px;position:absolute;}
+.button-up { height:54px;width:36px; background-image: url("../images/arrowright.png"); top:260px; cursor:pointer;position:absolute; right:155px;}
+#slider { position:relative;}
+/*slider*/

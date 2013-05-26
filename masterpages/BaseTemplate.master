@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/umbraco/masterpages/default.master" AutoEventWireup="true" %>
+
+<asp:Content ContentPlaceHolderID="ContentPlaceHolderDefault" runat="server">
+<html>
+<head>
+<title>Andi del futuro</title>
+<link rel="stylesheet" href= "css/andi.css" type="text/css" />
+<script type="text/javascript" src="scripts/jquery-1.10.0.min.js"></script>
+<script type="text/javascript" src="scripts/andi.js"></script>
+</head>
+<body>
+<div id="top-container">
+<div id="social-search">
+<umbraco:Macro Alias="Social" runat="server"></umbraco:Macro>
+<div id="search">
+ <form method="post" id="frm-searcher" action="@searcher.Url">
+    <input type="text" name="wts" value="@Dictionary.Buscar" id="searcher"/>
+    <input type="submit" id="btn-searcher" value=""/> 
+ </form>
+</div>
+</div>
+<umbraco:Macro Alias="MainMenu" runat="server"></umbraco:Macro>
+</div>
+
+
+<asp:ContentPlaceHolder Id="macrohead" runat="server">
+	<!-- Insert default "macrohead" markup here -->ACAAAA
+</asp:ContentPlaceHolder>
+
+
+
+<asp:ContentPlaceHolder Id="macrocontent" runat="server">
+	<!-- Insert default "macrocontent" markup here -->ACAAAA
+</asp:ContentPlaceHolder>
+
+
+<div id="footer">
+<div id="rights-contact">
+<div id="rights"></div>
+<div id="contact"></div>
+</div>
+</div>
+</body>
+</html>
+	
+	
+	
+</asp:Content>

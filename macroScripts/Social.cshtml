@@ -1,0 +1,18 @@
+﻿@inherits umbraco.MacroEngines.DynamicNodeContext
+@using umbraco.MacroEngines;
+@{ 
+    DynamicNode socialContainer = CurrentModel.XPath("ancestor-or-self::Home//ContainerSocial").Items[0];
+if (socialContainer != null && socialContainer.ChildrenAsList.Count() > 0)
+    {
+<div id="social">
+<ul class="social">
+	@foreach (DynamicNode socialNet in socialContainer.GetChildrenAsList)
+  {
+      string classToLink = socialNet.GetPropertyValue("url").Contains("mailto") ? "link-contenedor" : "link-contenedor-blank";
+     <li><img class="@classToLink" href="@socialNet.GetPropertyValue("url")" src="@MediaHelper.GetFile(socialNet.GetPropertyValue("image"))" alt="@socialNet.GetPropertyValue("alt")"/></li>
+  }		
+</ul>
+</div>	 
+    }
+    }
+

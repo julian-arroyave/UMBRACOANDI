@@ -1,0 +1,18 @@
+﻿@inherits umbraco.MacroEngines.DynamicNodeContext
+@using umbraco.MacroEngines;
+@{  
+ string link = string.Empty;
+ var pages = CurrentModel.AncestorOrSelf("Home").ChildrenAsList.Where(c => c.NodeTypeAlias == "Page");
+    if (pages != null && pages.Count() > 0)
+    {
+    <div id="menu">
+<ul class="menu">
+    @foreach (var page in pages)
+    {
+        link = string.IsNullOrEmpty(page.GetPropertyValue("optionalLink")) ? page.Url : page.GetPropertyValue("optionalLink");
+        <li><a href="@link">@page.Name</a></li>
+    }
+</ul>
+</div>
+    }
+    }

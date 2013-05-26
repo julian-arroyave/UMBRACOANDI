@@ -1,0 +1,36 @@
+﻿@inherits umbraco.MacroEngines.DynamicNodeContext
+@using umbraco.MacroEngines;
+@{    
+    var contentSliders = CurrentModel.XPath("ancestor-or-self::Home//ContainerSlider").Items[0];
+        
+    if(contentSliders != null && contentSliders.ChildrenAsList.Count() > 0)
+    {
+    var sliders = contentSliders.ChildrenAsList.ToList();
+    <div id="slider">
+    
+  <div id="buttons-slider-top">
+	<div class="button-down"></div>
+	<div class="button-up"></div>
+	</div>
+        <div id="buttom-slider-ppal">
+                <ul>
+                        <li class="ico-slider-ppal active" idslider="0"></li>
+		            @for (int i = 1; i < sliders.Count; i++)
+              {
+                            <li class="ico-slider-ppal" idslider="@i"></li>
+              }		
+                </ul>
+        </div>
+        <div class="link-contenedor-blank slider-ppal" target="_blank" href="@sliders[0].GetPropertyValue("urlToRedirect")" idslider="0"> <img src="@MediaHelper.GetFile(sliders[0].GetPropertyValue("image"))" alt=""/></div>
+		@for (int i = 1; i < sliders.Count; i++)
+  {
+        <div class="link-contenedor-blank slider-ppal" target="_blank" href="@sliders[i].GetPropertyValue("urlToRedirect")" idslider="@i" style="display:none;"><img src="@MediaHelper.GetFile(sliders[i].GetPropertyValue("image"))" alt=""/>
+		
+		
+		</div>
+  }		
+
+    </div>
+  	
+    }
+}
