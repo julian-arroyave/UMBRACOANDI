@@ -1,0 +1,10 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/masterpages/BaseTemplate.master" AutoEventWireup="true" %>
+
+<asp:content ContentPlaceHolderId="macrohead" runat="server">
+	
+</asp:content>
+
+<asp:content ContentPlaceHolderId="macrocontent" runat="server">
+	
+</asp:content>
+

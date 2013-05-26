@@ -62,6 +62,8 @@
     <add type="umbraco.ActionHandlers.umbEnsureUniqueName, umbraco, Version=1.0.4869.17901, Culture=neutral, PublicKeyToken=null" />
   </baseType>
   <baseType type="umbraco.interfaces.ITree" resolutionType="FindAllTypes">
+    <add type="umbraco.editorControls.MultiNodeTreePicker.FilteredContentTree, umbraco.editorControls, Version=1.0.4869.17910, Culture=neutral, PublicKeyToken=null" />
+    <add type="umbraco.editorControls.MultiNodeTreePicker.FilteredMediaTree, umbraco.editorControls, Version=1.0.4869.17910, Culture=neutral, PublicKeyToken=null" />
     <add type="umbraco.loadDLRScripts, umbraco, Version=1.0.4869.17901, Culture=neutral, PublicKeyToken=null" />
     <add type="umbraco.loadRelationTypes, umbraco, Version=1.0.4869.17901, Culture=neutral, PublicKeyToken=null" />
     <add type="umbraco.cms.presentation.Trees.MediaRecycleBin, umbraco, Version=1.0.4869.17901, Culture=neutral, PublicKeyToken=null" />
@@ -96,8 +98,6 @@
     <add type="umbraco.cms.presentation.Trees.LegacyTree, umbraco, Version=1.0.4869.17901, Culture=neutral, PublicKeyToken=null" />
     <add type="umbraco.cms.presentation.Trees.UserPermissions, umbraco, Version=1.0.4869.17901, Culture=neutral, PublicKeyToken=null" />
     <add type="umbraco.cms.presentation.Trees.UserTypes, umbraco, Version=1.0.4869.17901, Culture=neutral, PublicKeyToken=null" />
-    <add type="umbraco.editorControls.MultiNodeTreePicker.FilteredContentTree, umbraco.editorControls, Version=1.0.4869.17910, Culture=neutral, PublicKeyToken=null" />
-    <add type="umbraco.editorControls.MultiNodeTreePicker.FilteredMediaTree, umbraco.editorControls, Version=1.0.4869.17910, Culture=neutral, PublicKeyToken=null" />
   </baseType>
   <baseType type="umbraco.cms.businesslogic.macro.IMacroEngine" resolutionType="FindAllTypes">
     <add type="Umbraco.Web.Macros.PartialViewMacroEngine, umbraco, Version=1.0.4869.17901, Culture=neutral, PublicKeyToken=null" />
@@ -142,5 +142,20 @@
   </baseType>
   <baseType type="Umbraco.Web.BaseRest.RestExtensionAttribute" resolutionType="FindAttributedTypes">
     <add type="Umbraco.Web.WebServices.FolderBrowserService, umbraco, Version=1.0.4869.17901, Culture=neutral, PublicKeyToken=null" />
+  </baseType>
+  <baseType type="umbraco.interfaces.IMacroGuiRendering" resolutionType="FindAllTypes">
+    <add type="umbraco.macroRenderings.autoForms, umbraco.macroRenderings, Version=1.0.4869.17901, Culture=neutral, PublicKeyToken=null" />
+    <add type="umbraco.macroRenderings.content, umbraco.macroRenderings, Version=1.0.4869.17901, Culture=neutral, PublicKeyToken=null" />
+    <add type="umbraco.macroRenderings.contentTypeSingle, umbraco.macroRenderings, Version=1.0.4869.17901, Culture=neutral, PublicKeyToken=null" />
+    <add type="umbraco.macroRenderings.contentTypeMultiple, umbraco.macroRenderings, Version=1.0.4869.17901, Culture=neutral, PublicKeyToken=null" />
+    <add type="umbraco.macroRenderings.media, umbraco.macroRenderings, Version=1.0.4869.17901, Culture=neutral, PublicKeyToken=null" />
+    <add type="umbraco.macroRenderings.numeric, umbraco.macroRenderings, Version=1.0.4869.17901, Culture=neutral, PublicKeyToken=null" />
+    <add type="umbraco.macroRenderings.propertyTypePicker, umbraco.macroRenderings, Version=1.0.4869.17901, Culture=neutral, PublicKeyToken=null" />
+    <add type="umbraco.macroRenderings.propertyTypePickerMultiple, umbraco.macroRenderings, Version=1.0.4869.17901, Culture=neutral, PublicKeyToken=null" />
+    <add type="umbraco.macroRenderings.tabPicker, umbraco.macroRenderings, Version=1.0.4869.17901, Culture=neutral, PublicKeyToken=null" />
+    <add type="umbraco.macroRenderings.tabPickerMultiple, umbraco.macroRenderings, Version=1.0.4869.17901, Culture=neutral, PublicKeyToken=null" />
+    <add type="umbraco.macroRenderings.text, umbraco.macroRenderings, Version=1.0.4869.17901, Culture=neutral, PublicKeyToken=null" />
+    <add type="umbraco.macroRenderings.textMultiple, umbraco.macroRenderings, Version=1.0.4869.17901, Culture=neutral, PublicKeyToken=null" />
+    <add type="umbraco.macroRenderings.yesNo, umbraco.macroRenderings, Version=1.0.4869.17901, Culture=neutral, PublicKeyToken=null" />
   </baseType>
 </plugins>

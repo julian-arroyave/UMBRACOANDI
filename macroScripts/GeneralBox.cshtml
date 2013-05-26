@@ -1,0 +1,19 @@
+﻿@inherits umbraco.MacroEngines.DynamicNodeContext
+@using umbraco.MacroEngines;
+@{ 
+    string nodeId = Parameter.nodeId;
+    DynamicNode nodeBox = new DynamicNode();
+    if (!string.IsNullOrEmpty(nodeId))
+    {
+        nodeBox = new DynamicNode(nodeId);
+    }
+
+    if (nodeBox != null && nodeBox.NodeTypeAlias == "BoxGeneral")
+    {
+<div class="joinus" style=" background-color:#50bfe9">
+<div class="join-in link-contenedor" href="@nodeBox.GetPropertyValue("url")">
+@Html.Raw(nodeBox.GetPropertyValue("content"))</div>
+</div>
+    }
+    }
+

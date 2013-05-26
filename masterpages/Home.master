@@ -7,7 +7,7 @@
 <asp:content ContentPlaceHolderId="macrocontent" runat="server">
 <div id="wrapper">
 <div id="content">
-<div class="joinus" style=" background-color:#50bfe9"></div>
+<umbraco:Item field="boxtopleft" runat="server" />
 <div class="blog">
 <h3 class="titlebox">BLOG</h3>
 <div class="post">

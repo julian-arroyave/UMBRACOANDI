@@ -822,3 +822,22 @@ Parameter name: index
 2013-05-26 10:56:15,924 [42] INFO  Umbraco.Core.PluginManager - [Thread 11] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 14ms)
 2013-05-26 10:56:16,200 [42] INFO  Umbraco.Core.PluginManager - [Thread 11] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 8ms)
 2013-05-26 10:56:31,973 [42] INFO  Umbraco.Core.PluginManager - [Thread 27] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 2 (took 1ms)
+2013-05-26 11:49:59,570 [42] INFO  Umbraco.Core.PluginManager - [Thread 39] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 3ms)
+2013-05-26 11:49:59,859 [42] INFO  Umbraco.Core.PluginManager - [Thread 39] Completed resolution of types of umbraco.interfaces.ITree, found 36 (took 2ms)
+2013-05-26 11:50:16,734 [42] INFO  Umbraco.Core.PluginManager - [Thread 58] Completed resolution of types of umbraco.interfaces.IDataType, found 35 (took 2ms)
+2013-05-26 12:22:43,039 [42] INFO  Umbraco.Core.PluginManager - [Thread 56] Completed resolution of types of umbraco.interfaces.IDataType, found 35 (took 0ms)
+2013-05-26 14:01:32,740 [42] INFO  Umbraco.Core.PluginManager - [Thread 39] Completed resolution of types of Umbraco.Web.BaseRest.RestExtensionAttribute, found 1 (took 701ms)
+2013-05-26 14:35:46,562 [42] INFO  Umbraco.Core.PluginManager - [Thread 49] Completed resolution of types of umbraco.interfaces.IDataType, found 35 (took 0ms)
+2013-05-26 14:52:10,668 [42] WARN  Umbraco.Web.Routing.NiceUrlProvider - [Thread 53] Couldn't find any page with nodeId=0. This is most likely caused by the page not being published.
+2013-05-26 14:52:10,669 [42] WARN  Umbraco.Web.Routing.NiceUrlProvider - [Thread 53] Couldn't find any page with nodeId=0. This is most likely caused by the page not being published.
+2013-05-26 14:52:10,669 [42] WARN  Umbraco.Web.Routing.NiceUrlProvider - [Thread 53] Couldn't find any page with nodeId=0. This is most likely caused by the page not being published.
+2013-05-26 14:52:10,721 [42] WARN  Umbraco.Web.Routing.NiceUrlProvider - [Thread 53] Couldn't find any page with nodeId=0. This is most likely caused by the page not being published.
+2013-05-26 14:52:10,721 [42] WARN  Umbraco.Web.Routing.NiceUrlProvider - [Thread 53] Couldn't find any page with nodeId=0. This is most likely caused by the page not being published.
+2013-05-26 14:52:10,721 [42] WARN  Umbraco.Web.Routing.NiceUrlProvider - [Thread 53] Couldn't find any page with nodeId=0. This is most likely caused by the page not being published.
+2013-05-26 14:53:37,116 [42] INFO  Umbraco.Core.PluginManager - [Thread 49] Completed resolution of types of umbraco.interfaces.IDataType, found 35 (took 0ms)
+2013-05-26 14:54:05,367 [42] INFO  Umbraco.Core.PluginManager - [Thread 49] Completed resolution of types of umbraco.interfaces.IDataType, found 35 (took 0ms)
+2013-05-26 14:54:39,421 [42] INFO  Umbraco.Core.PluginManager - [Thread 46] Completed resolution of types of umbraco.interfaces.IMacroGuiRendering, found 13 (took 17ms)
+2013-05-26 14:54:51,918 [42] INFO  Umbraco.Core.PluginManager - [Thread 53] Completed resolution of types of umbraco.interfaces.IMacroGuiRendering, found 13 (took 0ms)
+2013-05-26 15:04:58,875 [42] INFO  Umbraco.Core.PluginManager - [Thread 39] Completed resolution of types of umbraco.interfaces.IMacroGuiRendering, found 13 (took 0ms)
+2013-05-26 15:05:11,814 [42] INFO  Umbraco.Core.PluginManager - [Thread 12] Completed resolution of types of umbraco.interfaces.IMacroGuiRendering, found 13 (took 0ms)
+2013-05-26 16:39:09,080 [42] INFO  Umbraco.Core.PluginManager - [Thread 66] Completed resolution of types of umbraco.interfaces.IMacroGuiRendering, found 13 (took 61ms)

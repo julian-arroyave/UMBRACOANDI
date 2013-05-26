@@ -21,10 +21,11 @@
               }		
                 </ul>
         </div>
-        <div class="link-contenedor-blank slider-ppal" target="_blank" href="@sliders[0].GetPropertyValue("urlToRedirect")" idslider="0"> <img src="@MediaHelper.GetFile(sliders[0].GetPropertyValue("image"))" alt=""/></div>
+        
+        <div class="slider-ppal" target="_blank" idslider="0"> <div  href="@sliders[0].GetPropertyValue("urlToRedirect")" class="link-contenedor-blank text-slider">@Html.Raw(@sliders[0].GetPropertyValue("content"))</div> <img class="item-slider" src="@MediaHelper.GetFile(sliders[0].GetPropertyValue("image"))" alt=""/></div>
 		@for (int i = 1; i < sliders.Count; i++)
-  {
-        <div class="link-contenedor-blank slider-ppal" target="_blank" href="@sliders[i].GetPropertyValue("urlToRedirect")" idslider="@i" style="display:none;"><img src="@MediaHelper.GetFile(sliders[i].GetPropertyValue("image"))" alt=""/>
+  {     
+        <div class="slider-ppal" target="_blank" idslider="@i" style="display:none;"><div  href="@sliders[i].GetPropertyValue("urlToRedirect")" class="link-contenedor-blank  text-slider">@Html.Raw(@sliders[i].GetPropertyValue("content"))</div><img class="item-slider" src="@MediaHelper.GetFile(sliders[i].GetPropertyValue("image"))" alt=""/>
 		
 		
 		</div>

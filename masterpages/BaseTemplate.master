@@ -4,9 +4,9 @@
 <html>
 <head>
 <title>Andi del futuro</title>
-<link rel="stylesheet" href= "css/andi.css" type="text/css" />
-<script type="text/javascript" src="scripts/jquery-1.10.0.min.js"></script>
-<script type="text/javascript" src="scripts/andi.js"></script>
+<link rel="stylesheet" href= "../css/andi.css" type="text/css" />
+<script type="text/javascript" src="../scripts/jquery-1.10.0.min.js"></script>
+<script type="text/javascript" src="../scripts/andi.js"></script>
 </head>
 <body>
 <div id="top-container">
