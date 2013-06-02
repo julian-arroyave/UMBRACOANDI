@@ -1,0 +1,5 @@
+﻿@inherits umbraco.MacroEngines.DynamicNodeContext
+@using umbraco.MacroEngines;
+@{ 
+    <img class="image-page" src="@MediaHelper.GetFile(@CurrentModel.GetPropertyValue("image"))" alt=""/>
+}

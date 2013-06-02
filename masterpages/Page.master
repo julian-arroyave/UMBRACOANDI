@@ -1,10 +1,19 @@
 ﻿<%@ Master Language="C#" MasterPageFile="~/masterpages/BaseTemplate.master" AutoEventWireup="true" %>
 
 <asp:content ContentPlaceHolderId="macrohead" runat="server">
-	
+	<div id="head-title">
+    <div id="content-title">
+    <div id="title-page">
+		<umbraco:Item field="title" runat="server" />
+    </div>
+    <div id="subtitle-page">
+	<umbraco:Item field="subtitle" runat="server" />
+	</div>
+    </div>
+    </div>
 </asp:content>
 
 <asp:content ContentPlaceHolderId="macrocontent" runat="server">
-	
+	<umbraco:Macro Alias="ImagePage" runat="server"></umbraco:Macro>
+	<umbraco:Macro Alias="Module" runat="server"></umbraco:Macro>
 </asp:content>
-

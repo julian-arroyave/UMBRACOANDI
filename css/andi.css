@@ -57,7 +57,7 @@ h3.titlebox { font-family:Myriad Pro; color:#1abce5;  font-weight:bolder;  font-
     
     
     .menu li a:hover{color:#1abce5;}
-    ul { list-style:none; font-family:"MyriadPro-Bold", Myriad Pro; font-weight:bold; cursor:pointer; margin:0;}
+    ul {font-family:"MyriadPro-Bold", Myriad Pro; font-weight:bold; cursor:pointer; margin:0;}
     .menu { float: right;}
     #rights, #contact { width:50%; height:100%} 
     #rights { float:left;}
@@ -75,7 +75,7 @@ h3.titlebox { font-family:Myriad Pro; color:#1abce5;  font-weight:bolder;  font-
     right: 164px;
     top: 16px;}
     #search { float:right;position: relative; margin-right:35px;} 
-    ul.menu , #social { margin-right:35px;}
+    ul.menu , #social { margin-right:35px;list-style: none outside none;}
     #searcher { background-color:#023976; border:0; height: 25px; width:160px;font-family:Myriad Pro; color:#999; padding-left:5px;}
     #social ul li { float:left;margin-right:16px;}
     
@@ -167,3 +167,17 @@ font-family:Myriad Pro; font-weight:normal; font-size:17.05px; color:#2f6f88;
 font-family:Myriad Pro; font-weight:normal; font-size:123.94%; color:#2f6f88;
 }
 
+#head-title { height:188px; background-color:#fff;}
+#content-title { width: 960px; margin: 0 auto; height:100%;}
+#title-page { font-size:62px; font-family:"MyriadPro-Bold", Myriad Pro; color: #1abce5; font-weight:bold; padding-top:52px;}
+#subtitle-page { font-size:21px; font-family:Calibri, Myriad Pro; color: #505050; font-weight:normal; margin-top:5px;}
+.image-page { width:100%;}
+.module-item {  font-family:Calibri; font-size:93.7px; color:#505050; margin-top:40px; width:300px; float:left;}
+div.module { width:960px; margin:0 auto;}
+.module-item span.title-module { margin-left:-10px;}
+.item-title-module{ font-size:16px; font-family:Calibri; font-style:normal; color:#7c7c7c; text-transform:uppercase; padding:10px 0; border-bottom:1px solid #d5d5d5; font-weight:normal;}
+.ul-title-module{ padding:0; margin-top:31px;list-style: none outside none; }
+.content-module{ width:660px; float:left; margin-top:67px;font-family:Calibri; font-size:16px; color:#505050; font-style:normal;}
+.content-title-module { font-family:Calibri; font-weight:bold; font-size:22px; color:#505050;}
+.content-module ul { font-size:16px; font-family:Calibri; font-style:normal; font-weight:normal; list-style-type:inherit;} 
+.hidden { display:none !important;}

@@ -1,0 +1,42 @@
+﻿@inherits umbraco.MacroEngines.DynamicNodeContext
+@using umbraco.MacroEngines;
+@{ 
+    DynamicNodeList module = CurrentModel.XPath("//module");
+    if (module.Count() > 0)
+    {
+        string classHidden = string.Empty;
+        foreach (DynamicNode item in module)
+        {
+            string title = item.GetPropertyValue("title");
+    <div class="module">
+        <div class="module-item">
+            <img src="@MediaHelper.GetFile(item.GetPropertyValue("image"))" alt="@item.GetPropertyValue("alt")"/>
+            <span class="title-module">@item.Name</span>
+            @if (item.GetChildrenAsList.Count() > 0)
+            {
+                <ul class="ul-title-module">
+                    @foreach (DynamicNode itemModule in item.GetChildrenAsList)
+                    {
+                        <li class="item-title-module">@itemModule.Name</li>
+                    }
+                </ul>
+            }
+        </div>
+
+                    @if (item.GetChildrenAsList.Count() > 0)
+            {
+                        
+                   foreach (DynamicNode itemModule in item.GetChildrenAsList)
+                    {    
+        <div class="content-module @classHidden">
+        @Html.Raw(itemModule.GetPropertyValue("content"))
+        </div>
+                        classHidden = "hidden";
+                        }    
+                        
+                        
+                        }
+    </div>
+        }
+    }
+}
