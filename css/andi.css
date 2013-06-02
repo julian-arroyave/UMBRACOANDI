@@ -1,19 +1,10 @@
-body, html { margin:0; height:100%; font-size:17px;} 
-
-@font-face {
-    font-family: 'MyriadPro-Bold';
-    src: url('../css/fonts/MyriadPro-Bold.otf') format('opentype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-
+body, html { margin:0; height:100%;} 
 #wrapper     
 {
     margin: -40px auto 0;
     overflow: auto;
     position: relative;
-    width: 960px;
+    width: 75%;
     z-index: 5;
 }
 #slider
@@ -35,47 +26,45 @@ body, html { margin:0; height:100%; font-size:17px;}
     }
     
     .post { margin:14px 25px; font-family:Calibri; height:100px;}
-    .subtitle { font-weight:bolder; font-size:117.64%;   margin-bottom: 3px;
+    .subtitle { font-weight:bolder; font-size:20px;   margin-bottom: 3px;
     margin-top: -8px}
-    .subsubtitle {font-size:70.58%;color:#515151;}
-    .textcontent { line-height:111.76%; color:#515151;}
+    .subsubtitle {font-size:12px;color:#515151;}
+    .textcontent { line-height:19px; color:#515151;}
     .general .img-box{ width:204px; height: 150px;}
     .general .post { height:150px;}
     .general .post .text-box { height:150px;}
     .img-box { width:150px; height:100px;  float: left;     margin-right: 22px;} 
-h3.titlebox { font-family:Myriad Pro; color:#1abce5;  font-weight:bolder;  font-size:235.29%; margin:10px; margin-left:25px;}
+h3.titlebox { font-family:Myriad Pro; color:#1abce5;  font-weight:bolder;  font-size:40px; margin:10px; margin-left:25px;}
+    #rights-contact { width:75%;margin: 0 auto;}
     #top-container { width:100%;background-color:#034793; height:100px;}
-    #social-search{ display:block; height:50%;margin: 0 auto;padding-top: 12px;position: relative;}
-    #menu { display:block; height:50%;margin: 0 auto;}
+    #social-search{ display:block; height:50%; width:75%;margin: 0 auto;padding-top: 12px;position: relative;}
+    #menu { display:block; height:50%; width:75%;margin: 0 auto;}
     .menu li, .menu li  a  {float:left; margin-left:12px; color:#fff; text-transform: uppercase; text-decoration:none; }
-    .news .subtitle { font-size:88.23%;}
-    .news .textcontent { font-size:82.35%;}
+    .news .subtitle { font-size:15px;}
+    .news .textcontent { font-size:14px;}
     .news .post{ margin: 0 10px;}
-    .news .date { float:left; height:60px; width:60px; font-size:176.47%; text-align:center; color:#0d4f9d; line-height:30px;} 
+    .news .date { float:left; height:60px; width:60px; font-size:30px; text-align:center; color:#0d4f9d} 
     .news .date span { font-size:19.5px; }
     
     
     
     .menu li a:hover{color:#1abce5;}
-    ul {font-family:"MyriadPro-Bold", Myriad Pro; font-weight:bold; cursor:pointer; margin:0;}
+    ul { list-style:none; font-family:Myriad Pro; font-weight:bold; cursor:pointer; margin:0;}
     .menu { float: right;}
     #rights, #contact { width:50%; height:100%} 
     #rights { float:left;}
     #contact { float: right;}
     body { background-color: #e8e8e8; margin:0px;} 
     .news, .general { height:255px;margin:1%; background-color:#fff; float:left;}
-    .joinus , .news {width:42%;}
-    .general ,.blog { width:54%;}
-    .blog, .joinus { height:335px; margin:1%; float:left; background-color:#fff;}
-    .joinus { font-size:15px;} 
-    .joinus p {margin:0;}
+    .joinus , .news {width:35%;}
+    .general ,.blog { width:61%;}
+    .blog, .joinus { height:335px; margin:1%; float:left; background-color:#fff;} 
     #social {    display: inline-block;
     float: right;
     position: absolute;
     right: 164px;
     top: 16px;}
-    #search { float:right;position: relative; margin-right:35px;} 
-    ul.menu , #social { margin-right:35px;list-style: none outside none;}
+    #search { float:right;position: relative;} 
     #searcher { background-color:#023976; border:0; height: 25px; width:160px;font-family:Myriad Pro; color:#999; padding-left:5px;}
     #social ul li { float:left;margin-right:16px;}
     
@@ -92,25 +81,23 @@ h3.titlebox { font-family:Myriad Pro; color:#1abce5;  font-weight:bolder;  font-
 } 
 
 .text-box span { display:block;}
-.join-in { margin:21px;}
+.join-in { margin:32px;}
 
 /*slider*/
 .button-down { height:54px;width:36px; background-image: url("../images/arrowleft.png"); top:230px; cursor:pointer; left:8%;position:absolute; z-index:10}
 .button-up { height:54px;width:36px; background-image: url("../images/arrowright.png"); top:230px; cursor:pointer;position:absolute; right:8%; z-index:10}
 #slider { position:relative;}
-.link-contenedor-blank,  .link-contenedor { cursor:pointer;}
+.link-contenedor-blank,  link-contenedor { cursor:pointer;}
 .text-slider {    left: 60%;
     margin: 0 auto;
     position: absolute;
     top: 175px;
-    width: 360px;
-     font-size:15px;
-    }
+    width: 360px;}
     
     .text-slider p { margin:0;}
 /*slider*/
 
-.join-in { line-height:33px;}
+
 
 
 
@@ -167,6 +154,9 @@ font-family:Myriad Pro; font-weight:normal; font-size:17.05px; color:#2f6f88;
 font-family:Myriad Pro; font-weight:normal; font-size:123.94%; color:#2f6f88;
 }
 
+.content-title-module {
+font-family:Calibri; font-weight:bold; font-size:22px; color:#505050;
+}
 #head-title { height:188px; background-color:#fff;}
 #content-title { width: 960px; margin: 0 auto; height:100%;}
 #title-page { font-size:62px; font-family:"MyriadPro-Bold", Myriad Pro; color: #1abce5; font-weight:bold; padding-top:52px;}
@@ -176,8 +166,10 @@ font-family:Myriad Pro; font-weight:normal; font-size:123.94%; color:#2f6f88;
 div.module { width:960px; margin:0 auto;}
 .module-item span.title-module { margin-left:-10px;}
 .item-title-module{ font-size:16px; font-family:Calibri; font-style:normal; color:#7c7c7c; text-transform:uppercase; padding:10px 0; border-bottom:1px solid #d5d5d5; font-weight:normal;}
-.ul-title-module{ padding:0; margin-top:31px;list-style: none outside none; }
-.content-module{ width:660px; float:left; margin-top:67px;font-family:Calibri; font-size:16px; color:#505050; font-style:normal;}
-.content-title-module { font-family:Calibri; font-weight:bold; font-size:22px; color:#505050;}
+.ul-title-module{ padding:0; margin-top:31px;list-style: none outside none; width:85%; }
+.content-module{ width:660px; float:left; margin:43px 0;font-family:Calibri; font-size:16px; color:#505050; font-style:normal;}
 .content-module ul { font-size:16px; font-family:Calibri; font-style:normal; font-weight:normal; list-style-type:inherit;} 
+ul.social { list-style:none;}
+.item-title-module.active { color:#f05523; font-weight:bold;}
 .hidden { display:none !important;}
+

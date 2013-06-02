@@ -5,6 +5,7 @@
     if (module.Count() > 0)
     {
         string classHidden = string.Empty;
+        string classActive = "active";
         foreach (DynamicNode item in module)
         {
             string title = item.GetPropertyValue("title");
@@ -17,8 +18,11 @@
                 <ul class="ul-title-module">
                     @foreach (DynamicNode itemModule in item.GetChildrenAsList)
                     {
-                        <li class="item-title-module">@itemModule.Name</li>
+                        <li idattr="@itemModule.Id" class="@classActive item-title-module">@itemModule.Name</li>
+                        classActive = "";
                     }
+                    
+
                 </ul>
             }
         </div>
@@ -28,7 +32,7 @@
                         
                    foreach (DynamicNode itemModule in item.GetChildrenAsList)
                     {    
-        <div class="content-module @classHidden">
+        <div id="@itemModule.Id" class="content-module @classHidden">
         @Html.Raw(itemModule.GetPropertyValue("content"))
         </div>
                         classHidden = "hidden";

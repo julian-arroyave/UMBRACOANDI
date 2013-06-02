@@ -97,7 +97,7 @@ function BeforeSlider() {
     var active = parseInt($("#buttom-slider-ppal .active").attr("idslider"));
     var numSliders = parseInt($(".ico-slider-ppal").length);
     if (active == 0) {
-        active = numSliders-1;
+        active = numSliders - 1;
     }
     else { active--; }
 
@@ -118,5 +118,25 @@ function BeforeSlider() {
         }
     });
 }
+
+//#endregion
+
+//#region tabs-page
+$(document).ready(function () {
+
+    $(".item-title-module").click(function () {
+
+
+        $(".item-title-module.active").removeClass("active");
+        $(".content-module").hide();
+        var contentId = $(this).attr("idattr");
+        $(this).addClass("active");
+
+        $("#" + contentId).fadeIn(500);
+        $("#" + contentId).removeClass("hidden");
+
+    });
+});
+
 
 //#endregion
