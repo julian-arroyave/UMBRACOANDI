@@ -1,6 +1,8 @@
 ﻿<%@ Master Language="C#" MasterPageFile="~/umbraco/masterpages/default.master" AutoEventWireup="true" %>
 
 <asp:Content ContentPlaceHolderID="ContentPlaceHolderDefault" runat="server">
+
+<!DOCTYPE html PUBLIC "-//w3c//dtd xhtml 1.1//en" "http://www.w3.org/tr/xhtml11/dtd/xhtml11.dtd">
 <html>
 <head>
 <title>Andi del futuro</title>

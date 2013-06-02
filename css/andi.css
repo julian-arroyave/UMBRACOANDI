@@ -1,10 +1,19 @@
 body, html { margin:0; height:100%; font-size:17px;} 
+
+@font-face {
+    font-family: 'MyriadPro-Bold';
+    src: url('../css/fonts/MyriadPro-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
 #wrapper     
 {
     margin: -40px auto 0;
     overflow: auto;
     position: relative;
-    width: 75%;
+    width: 960px;
     z-index: 5;
 }
 #slider
@@ -26,30 +35,29 @@ body, html { margin:0; height:100%; font-size:17px;}
     }
     
     .post { margin:14px 25px; font-family:Calibri; height:100px;}
-    .subtitle { font-weight:bolder; font-size:20px;   margin-bottom: 3px;
+    .subtitle { font-weight:bolder; font-size:117.64%;   margin-bottom: 3px;
     margin-top: -8px}
-    .subsubtitle {font-size:12px;color:#515151;}
-    .textcontent { line-height:19px; color:#515151;}
+    .subsubtitle {font-size:70.58%;color:#515151;}
+    .textcontent { line-height:111.76%; color:#515151;}
     .general .img-box{ width:204px; height: 150px;}
     .general .post { height:150px;}
     .general .post .text-box { height:150px;}
     .img-box { width:150px; height:100px;  float: left;     margin-right: 22px;} 
-h3.titlebox { font-family:Myriad Pro; color:#1abce5;  font-weight:bolder;  font-size:40px; margin:10px; margin-left:25px;}
-    #rights-contact { width:75%;margin: 0 auto;}
+h3.titlebox { font-family:Myriad Pro; color:#1abce5;  font-weight:bolder;  font-size:235.29%; margin:10px; margin-left:25px;}
     #top-container { width:100%;background-color:#034793; height:100px;}
-    #social-search{ display:block; height:50%; width:75%;margin: 0 auto;padding-top: 12px;position: relative;}
-    #menu { display:block; height:50%; width:75%;margin: 0 auto;}
+    #social-search{ display:block; height:50%;margin: 0 auto;padding-top: 12px;position: relative;}
+    #menu { display:block; height:50%;margin: 0 auto;}
     .menu li, .menu li  a  {float:left; margin-left:12px; color:#fff; text-transform: uppercase; text-decoration:none; }
-    .news .subtitle { font-size:15px;}
-    .news .textcontent { font-size:14px;}
+    .news .subtitle { font-size:88.23%;}
+    .news .textcontent { font-size:82.35%;}
     .news .post{ margin: 0 10px;}
-    .news .date { float:left; height:60px; width:60px; font-size:30px; text-align:center; color:#0d4f9d} 
+    .news .date { float:left; height:60px; width:60px; font-size:176.47%; text-align:center; color:#0d4f9d; line-height:30px;} 
     .news .date span { font-size:19.5px; }
     
     
     
     .menu li a:hover{color:#1abce5;}
-    ul { list-style:none; font-family:Myriad Pro; font-weight:bold; cursor:pointer; margin:0;}
+    ul { list-style:none; font-family:"MyriadPro-Bold", Myriad Pro; font-weight:bold; cursor:pointer; margin:0;}
     .menu { float: right;}
     #rights, #contact { width:50%; height:100%} 
     #rights { float:left;}
@@ -58,13 +66,16 @@ h3.titlebox { font-family:Myriad Pro; color:#1abce5;  font-weight:bolder;  font-
     .news, .general { height:255px;margin:1%; background-color:#fff; float:left;}
     .joinus , .news {width:42%;}
     .general ,.blog { width:54%;}
-    .blog, .joinus { height:335px; margin:1%; float:left; background-color:#fff;} 
+    .blog, .joinus { height:335px; margin:1%; float:left; background-color:#fff;}
+    .joinus { font-size:15px;} 
+    .joinus p {margin:0;}
     #social {    display: inline-block;
     float: right;
     position: absolute;
     right: 164px;
     top: 16px;}
-    #search { float:right;position: relative;} 
+    #search { float:right;position: relative; margin-right:35px;} 
+    ul.menu , #social { margin-right:35px;}
     #searcher { background-color:#023976; border:0; height: 25px; width:160px;font-family:Myriad Pro; color:#999; padding-left:5px;}
     #social ul li { float:left;margin-right:16px;}
     
@@ -92,42 +103,44 @@ h3.titlebox { font-family:Myriad Pro; color:#1abce5;  font-weight:bolder;  font-
     margin: 0 auto;
     position: absolute;
     top: 175px;
-    width: 360px;}
+    width: 360px;
+     font-size:15px;
+    }
     
     .text-slider p { margin:0;}
 /*slider*/
 
-.join-in { line-height:35px;}
+.join-in { line-height:33px;}
 
 
 
 /* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */
 .calibriitalic104 {
-font-style: italic; font-weight:bolder; font-family:Calibri; font-size:104.23px;color:#fff; line-height:25px;
+font-style: italic; font-weight:bolder; font-family:Calibri; font-size:613.11%;color:#fff; line-height:25px;
 }
 
 .calibrinormal65 {
-font-style: normal; font-weight:normal; font-family:Calibri; font-size:65.08px;color:#fff;line-height:60px;
+font-style: normal; font-weight:normal; font-family:Calibri; font-size:382.82%;color:#fff;line-height:60px;
 }
 
 .calibrinormal16 {
-font-style: normal; font-weight:normal; font-family:Calibri; font-size:16px;color:#fff;
+font-style: normal; font-weight:normal; font-family:Calibri; font-size:94.11%;color:#fff;
 }
 
 .calibrinormal28 {
-font-style: normal; font-weight:normal; font-family:Calibri; font-size:28.41px;color:#fff;
+font-style: normal; font-weight:normal; font-family:Calibri; font-size:167.11%;color:#fff;
 }
 
 .backgroundbluebutton {
-    background-color: #0D4F9D;   text-transform:uppercase;   color:#fff; display: inline-block;      font-family:Myriad Pro; font-weight:bold; font-size:22.41px;   margin-top: 9px !important;    padding: 4px 8px;     width: auto;
+    background-color: #0D4F9D;   text-transform:uppercase;   color:#fff; display: inline-block;      font-family:Myriad Pro; font-weight:bold; font-size:131.82%;   margin-top: 9px !important;    padding: 4px 8px;     width: auto;
 }
 
 .myriadobold69 {
-font-family:Myriad Pro; font-weight:bold; font-size:69.34px; color:#fff;
+font-family:Myriad Pro; font-weight:bold; font-size:407.88%; color:#fff;
 }
 
 .myriabold2107 {
-font-family:Myriad Pro; font-weight:bold; font-size:21.07px; color:#2f6f88;
+font-family:Myriad Pro; font-weight:bold; font-size:123.94%; color:#2f6f88;
 }
 
 .myriadnormal1705 {
@@ -135,22 +148,22 @@ font-family:Myriad Pro; font-weight:normal; font-size:17.05px; color:#2f6f88;
 }
 
 .myriadobold43 {
- font-family:Myriad Pro; font-weight:bold; font-size:43.71px; color:#fff;
+ font-family:Myriad Pro; font-weight:bold; font-size:257.11%; color:#fff;
 }
 
 .myriadnormal59 {
- font-family:Myriad Pro; font-weight:normal; font-size:59px; color:#2f6f88;
+ font-family:Myriad Pro; font-weight:normal; font-size:347.05%; color:#2f6f88;
 }
 
 .myriadnormal24 {
- font-family:Myriad Pro; font-weight:normal; font-size:24.16px; color:#fff;
+ font-family:Myriad Pro; font-weight:normal; font-size:142.11%; color:#fff;
 }
 
 .myriadbold53 {
- font-family:Myriad Pro; font-weight:bold; font-size:53.44px; color:#fff;
+ font-family:Myriad Pro; font-weight:bold; font-size:314.35%; color:#fff;
 }
 
 .myriadnormal2107 {
-font-family:Myriad Pro; font-weight:normal; font-size:21.07px; color:#2f6f88;
+font-family:Myriad Pro; font-weight:normal; font-size:123.94%; color:#2f6f88;
 }
 
