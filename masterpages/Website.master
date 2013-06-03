@@ -1,0 +1,18 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/umbraco/masterpages/default.master" AutoEventWireup="true" %>
+
+<asp:Content ContentPlaceHolderID="ContentPlaceHolderDefault" runat="server">
+	 <%
+     HttpCookie cookieLanguage = Request.Cookies.Get("adflanguage");
+	 if (cookieLanguage == null)
+		{
+	cookieLanguage = new HttpCookie("adflanguage", DateTime.Now.ToString());
+	cookieLanguage.Expires = DateTime.Today.AddYears(1);
+	cookieLanguage.Value = "es";
+	Response.Cookies.Add(cookieLanguage);
+	Response.Redirect("/es/");
+		}
+	else { string language = cookieLanguage.Value;
+	Response.Redirect("/" + language + "/");
+	}
+  %>
+</asp:Content>

@@ -11,7 +11,7 @@
 <div class="blog">
 <h3 class="titlebox">BLOG</h3>
 <div class="post">
-<img class="img-box" src="images/blog.png" alt=""/>
+<img class="img-box" src="../images/blog.png" alt=""/>
 <div class="text-box">
 <span class="subsubtitle">Febrero 22 de 2013</span>
 <span class="subtitle">Emprendedores Urbanos</span>
@@ -19,7 +19,7 @@
 </div>
 </div>
 <div class="post">
-<img class="img-box" src="images/blog.png" alt=""/>
+<img class="img-box" src="../images/blog.png" alt=""/>
 <div class="text-box">
 <span class="subsubtitle">Febrero 22 de 2013</span>
 <span class="subtitle">Emprendedores Urbanos</span>
@@ -30,7 +30,7 @@
 <div class="general">
 <h3 class="titlebox">BLOG</h3>
 <div class="post">
-<img class="img-box" src="images/blog.png" alt=""/>
+<img class="img-box" src="../images/blog.png" alt=""/>
 <div class="text-box">
 <span class="subsubtitle"></span>
 <span class="subtitle">Emprendedores Urbanos</span>

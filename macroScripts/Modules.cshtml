@@ -1,7 +1,8 @@
 ﻿@inherits umbraco.MacroEngines.DynamicNodeContext
 @using umbraco.MacroEngines;
 @{ 
-    DynamicNodeList module = CurrentModel.XPath("//module");
+    //DynamicNodeList module = CurrentModel.XPath("/module");
+    List<DynamicNode> module = CurrentModel.ChildrenAsList.Where(c => c.NodeTypeAlias == "module").ToList();
     if (module.Count() > 0)
     {
         string backgroundColor = "#fff";
@@ -45,6 +46,7 @@
     </div>
     
         classHidden = "active";
+        classActive = "active";
         backgroundColor = backgroundColor == "#fff" ? "#EDEDED" : "#fff";
         urlImage = urlImage == "../images/Shapewhite.png" ? "../images/Shapegray.png" : "../images/Shapewhite.png";
         }
