@@ -15,5 +15,6 @@
 
 <asp:content ContentPlaceHolderId="macrocontent" runat="server">
 	<umbraco:Macro Alias="ImagePage" runat="server"></umbraco:Macro>
+    
 	<umbraco:Macro Alias="Module" runat="server"></umbraco:Macro>
 </asp:content>

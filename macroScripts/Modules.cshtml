@@ -4,11 +4,17 @@
     DynamicNodeList module = CurrentModel.XPath("//module");
     if (module.Count() > 0)
     {
-        string classHidden = string.Empty;
+        string backgroundColor = "#fff";
+        string classHidden = "active";
         string classActive = "active";
+        string urlImage = "../images/Shapewhite.png";
         foreach (DynamicNode item in module)
         {
             string title = item.GetPropertyValue("title");
+            <div class="module-container" style="background-color:@backgroundColor; top:-5px" >
+            <div class="image">
+            <img src="@urlImage" alt="image"/>
+        </div>
     <div class="module">
         <div class="module-item">
             <img src="@MediaHelper.GetFile(item.GetPropertyValue("image"))" alt="@item.GetPropertyValue("alt")"/>
@@ -21,26 +27,26 @@
                         <li idattr="@itemModule.Id" class="@classActive item-title-module">@itemModule.Name</li>
                         classActive = "";
                     }
-                    
-
                 </ul>
             }
         </div>
+        @if (item.GetChildrenAsList.Count() > 0)
+        {
 
-                    @if (item.GetChildrenAsList.Count() > 0)
-            {
-                        
-                   foreach (DynamicNode itemModule in item.GetChildrenAsList)
-                    {    
-        <div id="@itemModule.Id" class="content-module @classHidden">
-        @Html.Raw(itemModule.GetPropertyValue("content"))
-        </div>
-                        classHidden = "hidden";
-                        }    
-                        
-                        
-                        }
+            foreach (DynamicNode itemModule in item.GetChildrenAsList)
+            {    
+            <div id="@itemModule.Id" class="content-module @classHidden">
+                @Html.Raw(itemModule.GetPropertyValue("content"))
+            </div>
+                classHidden = "hidden";
+            }
+        }
     </div>
+    </div>
+    
+        classHidden = "active";
+        backgroundColor = backgroundColor == "#fff" ? "#EDEDED" : "#fff";
+        urlImage = urlImage == "../images/Shapewhite.png" ? "../images/Shapegray.png" : "../images/Shapewhite.png";
         }
     }
 }

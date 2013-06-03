@@ -125,18 +125,30 @@ function BeforeSlider() {
 $(document).ready(function () {
 
     $(".item-title-module").click(function () {
-
-
         $(".item-title-module.active").removeClass("active");
-        $(".content-module").hide();
+        $(this).parent().parent().parent().find(".content-module").hide();
         var contentId = $(this).attr("idattr");
         $(this).addClass("active");
-
         $("#" + contentId).fadeIn(500);
         $("#" + contentId).removeClass("hidden");
-
+        $("#" + contentId).addClass("active");
+        CalculateHight();
     });
+
+    CalculateHight();
 });
 
 
 //#endregion
+
+//#region altura módulos
+function CalculateHight() {
+    $(".content-module.active").each(function (index) {
+        var height = $(this).css("height");
+        height = height.replace("px", "");
+        height = parseInt(height) + 100;
+        $(this).parent().parent().css("height", height + "px");
+
+    });
+};
+//#endregio
